@@ -15,11 +15,13 @@ export default function RatingForm({
 }: RatingFormProps) {
   return (
     <form onSubmit={submitFeedback} className="container">
-      <div className="star-container">
+      <div className="star-container" role="star-image">
         <img src={star} alt="star" />
       </div>
-      <h1 className="header">How did we do?</h1>
-      <p className="message">
+      <h1 className="header" role="question">
+        How did we do?
+      </h1>
+      <p className="message" role="message">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
