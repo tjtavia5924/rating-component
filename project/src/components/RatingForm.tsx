@@ -14,7 +14,7 @@ export default function RatingForm({
   showWarning,
 }: RatingFormProps) {
   return (
-    <form onSubmit={submitFeedback} className="container" role="region">
+    <form onSubmit={submitFeedback} className="container" role="form">
       <div className="star-container" aria-label="Star Icon">
         <img src={star} alt="star" />
       </div>
