@@ -14,14 +14,14 @@ export default function RatingForm({
   showWarning,
 }: RatingFormProps) {
   return (
-    <form onSubmit={submitFeedback} className="container">
-      <div className="star-container" role="star-image">
+    <form onSubmit={submitFeedback} className="container" role="region">
+      <div className="star-container" aria-label="Star Icon">
         <img src={star} alt="star" />
       </div>
-      <h1 className="header" role="question">
+      <h1 className="header" aria-label="Question: How did we do?">
         How did we do?
       </h1>
-      <p className="message" role="message">
+      <p className="message" aria-live="polite">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
