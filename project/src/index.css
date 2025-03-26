@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", Arial, sans-serif;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 410px;
+  width: 100%;
+  padding: 30px;
+  background-color: var(--dark-blue);
+  border-radius: 25px;
+}
+
+.star-container,
+.header,
+.message,
+.rating-btns,
+.submit-btn,
+.thanks-image-container,
+.thanks-header,
+.thanks-message {
+  margin-bottom: 20px;
+}
+
+.star-container {
+  background-color: var(--very-dark-blue);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.message {
+  color: var(--medium-grey);
+  line-height: 25px;
+}
+
+.rating-btn {
+  background-color: var(--very-dark-blue);
+  color: var(--medium-grey);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.rating-btn:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.rating-btn:focus {
+  background-color: var(--orange);
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  color: var(--very-dark-blue);
+  height: 45px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: large;
+  letter-spacing: 2px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.thanks-container {
+  max-width: 410px;
+  width: 100%;
+  padding: 30px;
+  background-color: var(--dark-blue);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.thanks-rating {
+  color: var(--orange);
+  background-color: var(--very-dark-blue);
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.thanks-message {
+  color: var(--medium-grey);
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.alert-container {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #ecd103;
+}
+
+.alert-message {
+  margin-left: 0.5em;
+  text-align: center;
+}
+
+.alert-icon,
+.alert-message {
+  filter: brightness(0) saturate(100%);
+}
